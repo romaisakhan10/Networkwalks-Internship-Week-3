@@ -1,40 +1,94 @@
 # Module 1: Password Cracking with John the Ripper (JTR)
 
-## 1. Overview
-This practical focused on learning password auditing using John the Ripper (JTR) and its graphical interface, Johnny GUI.
+## 1. Project Overview
 
-## 2. Objectives
-- Understand password hashing.
-- Learn to extract PDF password hashes.
-- Configure John the Ripper and Johnny GUI.
-- Perform password auditing in the authorized lab environment.
-- Verify the results by opening the protected PDF.
+This module focuses on practical password auditing using **John the Ripper (JTR)** and its graphical interface, **Johnny GUI**.
 
-## 3. Tools Used
-- John the Ripper (JTR)
-- Johnny GUI
-- PDF Hash Extractor
+The objective was to understand how password-protected PDF files can be audited by extracting their password hashes and using JTR to recover the password in an authorized lab environment.
 
-## 4. Practical Steps
-1. Installed and configured John the Ripper.
-2. Set up Johnny GUI.
-3. Extracted the PDF password hash.
-4. Saved the hash for the auditing process.
-5. Loaded the hash into Johnny.
-6. Performed the password auditing process.
-7. Verified the result by opening the PDF.
+## 2. Learning Objectives
 
-## 5. Results
-The practical was completed successfully. The PDF was opened after the password recovery process.
+- Understand the basics of password hashing.
+- Learn how password-protected PDF files store password-verification data.
+- Install and configure John the Ripper.
+- Explore the Johnny graphical interface.
+- Extract PDF password hashes.
+- Perform password auditing using JTR.
+- Verify the recovered password by opening the protected PDF.
 
-## 6. Screenshots
-The repository includes screenshots documenting hash extraction and successful PDF opening.
+## 3. Tools and Technologies
+
+| Tool | Purpose |
+|---|---|
+| John the Ripper | Password auditing |
+| Johnny GUI | Graphical interface for JTR |
+| PDF Hash Extractor | Extracting PDF password hashes |
+| Windows | Operating environment |
+
+## 4. Practical Implementation
+
+### Step 1: Install John the Ripper
+
+Downloaded and prepared John the Ripper on the Windows system.
+
+### Step 2: Configure Johnny GUI
+
+Installed Johnny GUI and configured it to locate the `john.exe` executable from the JTR installation directory.
+
+### Step 3: Extract the PDF Hash
+
+Used the PDF Hash Extractor to extract the password hash from the supplied protected PDF.
+
+The extracted hash was saved in a text file named `hash1.txt`.
+
+### Step 4: Load the Hash into Johnny
+
+Opened Johnny GUI and loaded the extracted hash file using the password-file option.
+
+### Step 5: Perform Password Auditing
+
+Started the password-auditing process using John the Ripper and observed the result.
+
+### Step 6: Verify the Result
+
+Used the recovered password to open the protected PDF and confirmed that the file opened successfully.
+
+## 5. Results and Observations
+
+The practical was completed successfully.
+
+- PDF hash extraction was performed.
+- The extracted hash was loaded into Johnny.
+- The password-auditing process was performed.
+- The recovered password was used to open the protected PDF successfully.
+
+## 6. Evidence and Screenshots
+
+The following screenshots document the practical work:
+
+### 1. PDF Hash Extraction
+`JTR_hash1.png`
+
+### 2. Successful PDF Verification
+`PDF_OPENED.PNG`
 
 ## 7. Key Learnings
-- Understanding PDF password protection.
-- Learning about password hashes.
-- Practical experience with John the Ripper.
-- Understanding password auditing techniques.
+
+Through this practical, I learned:
+
+- How password hashes are extracted from protected PDF files.
+- How John the Ripper is used for password auditing.
+- How Johnny GUI simplifies the use of JTR.
+- How password complexity affects password-auditing difficulty.
+- Why strong and unique passwords are important for digital security.
 
 ## 8. Conclusion
-This practical improved my understanding of password security and provided hands-on experience with John the Ripper and PDF password auditing.
+
+This practical provided hands-on experience with John the Ripper and Johnny GUI. I learned the process of extracting PDF password hashes, loading them into a password-auditing tool, and verifying the results. It strengthened my understanding of password security, hash extraction, and ethical password auditing.
+
+---
+
+**Internship:** Networkwalks  
+**Week:** 03  
+**Project:** Password Cracking with JTR  
+**Domain:** Cybersecurity and Ethical Hacking
